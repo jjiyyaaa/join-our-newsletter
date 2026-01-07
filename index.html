@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta name="description" content="Subscribe to the devChallenges newsletter for weekly collections, exclusive deals, and special offers on the hottest items.">
+
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -15,9 +17,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" 
+      rel="stylesheet"
+      media="print" 
+      onload="this.media='all'"
+    >
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    </noscript>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
       * {
         margin: 0;
@@ -140,7 +150,12 @@
       }
 
       .author-info a {
-        text-decoration: none;
+        text-decoration: underline;
+        color: inherit;
+      }
+
+      .author-info a:hover {
+        color: #284BCE;
       }
 
       @media (max-width: 600px) {
@@ -166,7 +181,7 @@
 
   <body>
     <main class="main-container">
-      <img src="resources/logo.svg" alt="logo">
+      <img src="resources/logo.svg" alt="logo" width="60" height="60">
 
       <h1>Join our newsletter</h1>
 
@@ -186,8 +201,8 @@
     </main>
 
     <div class="author-info">
-      Coded by <a href="https://www.linkedin.com/in/ghaziya-manna-putri-iwadani" target="_blank">jjiyyaaa</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+      Coded by <a href="https://www.linkedin.com/in/ghaziya-manna-putri-iwadani" target="_blank" rel="noopener">jjiyyaaa</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank" rel="noopener"
         >devChallenges.io</a
       >.
     </div>
