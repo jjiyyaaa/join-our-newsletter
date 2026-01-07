@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Join Our Newsletter | devChallenges.io</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        padding: 30px;
+        background-color: #F9FAFB;
+      }
+
+      h1 {
+        margin-top: 18.5px;
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        max-width: 800px;
+        width: 100%;
+        margin-top: 60px;
+      }
+
+      .subheading {
+        margin-top: 15px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #6C727F;
+        max-width: 700px;
+      }
+
+      .form-card {
+        background-color: #FFFFFF;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 12px;
+        padding: 24px;
+        width: 100%;
+        max-width: 570px;
+        margin-top: 60px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      input {
+        width: 100%;
+        padding: 16px 24px;
+        border: 1.5px solid #E5E7EB;
+        border-radius: 12px;
+        background-color: #F9FAFB;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: black;
+        outline: none;
+        text-align: center;
+        transition: border-color 0.2s ease;
+      }
+
+      input[type="email"]:hover {
+        border-color: #284BCE;
+      }
+
+      input[type="email"]::placeholder {
+        color: #6B7280;
+      }
+
+      input[type="email"]:focus {
+        border-color: #284BCE;
+        box-shadow: 0 0 0 3px rgba(48, 79, 254, 0.1);
+      }
+
+      input[type="email"]:focus::placeholder {
+        color: transparent;
+      }
+
+      button {
+        background-color: #284BCE;
+        color: #F9FAFB;
+        width: 100%;
+        padding: 16px 24px;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #111c74;
+      }
+
+      .helper-text {
+        color: #6C727F;
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-top: 1px;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 130px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="main-container">
+      <img src="resources/logo.svg" alt="logo">
+
+      <h1>Join our newsletter</h1>
+
+      <p class="subheading">Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+
+      <div class="form-card">
+        <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+
+          <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+
+          <button type="submit">Subscribe now</button>
+
+          <p class="helper-text">Your email is 100% confidential and won’t send you any spam.</p>
+        </form>
+      </div>
+      
+    </main>
+
+    <div class="author-info">
+      Coded by <a href="#">Your Name Here</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
