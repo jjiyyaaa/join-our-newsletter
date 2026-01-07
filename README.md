@@ -22,7 +22,7 @@
 
 ## Overview
 
-![Design Preview](design\Desktop_1350px.jpg)
+![Design Preview](./design/Desktop_1350px.jpg)
 
 ### Description
 This is my solution for the **Join Our Newsletter** challenge from DevChallenges.io. I created a responsive subscription component that includes an email input field, a call-to-action button, and a custom logo.
